@@ -64,7 +64,12 @@ static NSString * const kIconImageFileName = @"RrereshIndicator";
     [super setupProperties];
     
     _imageView = [[UIImageView alloc] init];
-    _imageView.image = [UIImage imageNamed:@"RrereshIndicator"];
+    
+    NSBundle *b = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[self class]] pathForResource:@"Image" ofType:@"bundle"]];
+    NSString *path = [b pathForResource:@"RrereshIndicator.png" ofType:nil];
+    UIImage *image = [UIImage imageWithContentsOfFile:path];
+    
+    _imageView.image = image;
     
 //    self.endRefreshAnimationDuration = 0.3f;
     self.stretchOffsetYAxisThreshold = 1.8;
