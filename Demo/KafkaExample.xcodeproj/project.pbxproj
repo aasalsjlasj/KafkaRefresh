@@ -37,6 +37,8 @@
 		98D2C0B82005F67400F1532F /* KafkaExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D2C0B72005F67400F1532F /* KafkaExampleTests.m */; };
 		B946B97320E67F4C00481872 /* KafkaCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = B946B97220E67F4C00481872 /* KafkaCategories.m */; };
 		B97F4C3B227C5D17004C6A71 /* KafkaScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B97F4C3A227C5D17004C6A71 /* KafkaScrollViewController.m */; };
+		F6B77092286AE4870096B627 /* KafkaProgressiveRingIndicatorHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B77090286AE4870096B627 /* KafkaProgressiveRingIndicatorHeader.m */; };
+		F6B77095286AE4A10096B627 /* KafkaProgressiveRingIndicatorFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B77093286AE4A10096B627 /* KafkaProgressiveRingIndicatorFooter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,10 @@
 		B946B97220E67F4C00481872 /* KafkaCategories.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KafkaCategories.m; sourceTree = "<group>"; };
 		B97F4C39227C5D17004C6A71 /* KafkaScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KafkaScrollViewController.h; sourceTree = "<group>"; };
 		B97F4C3A227C5D17004C6A71 /* KafkaScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KafkaScrollViewController.m; sourceTree = "<group>"; };
+		F6B77090286AE4870096B627 /* KafkaProgressiveRingIndicatorHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaProgressiveRingIndicatorHeader.m; sourceTree = "<group>"; };
+		F6B77091286AE4870096B627 /* KafkaProgressiveRingIndicatorHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaProgressiveRingIndicatorHeader.h; sourceTree = "<group>"; };
+		F6B77093286AE4A10096B627 /* KafkaProgressiveRingIndicatorFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KafkaProgressiveRingIndicatorFooter.m; sourceTree = "<group>"; };
+		F6B77094286AE4A10096B627 /* KafkaProgressiveRingIndicatorFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KafkaProgressiveRingIndicatorFooter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +250,8 @@
 				983A08FF201AB89900AEF743 /* KafkaReplicatorFooter.m */,
 				983A0900201AB89900AEF743 /* KafkaRingIndicatorFooter.h */,
 				983A0901201AB89900AEF743 /* KafkaRingIndicatorFooter.m */,
+				F6B77094286AE4A10096B627 /* KafkaProgressiveRingIndicatorFooter.h */,
+				F6B77093286AE4A10096B627 /* KafkaProgressiveRingIndicatorFooter.m */,
 			);
 			path = FootKit;
 			sourceTree = "<group>";
@@ -259,6 +267,8 @@
 				983A0908201AB89900AEF743 /* KafkaReplicatorHeader.m */,
 				983A0909201AB89900AEF743 /* KafkaRingIndicatorHeader.h */,
 				983A090A201AB89900AEF743 /* KafkaRingIndicatorHeader.m */,
+				F6B77091286AE4870096B627 /* KafkaProgressiveRingIndicatorHeader.h */,
+				F6B77090286AE4870096B627 /* KafkaProgressiveRingIndicatorHeader.m */,
 			);
 			path = HeadKit;
 			sourceTree = "<group>";
@@ -494,10 +504,12 @@
 				983A0919201AB89900AEF743 /* UIScrollView+KafkaRefreshControl.m in Sources */,
 				983A0921201AB89900AEF743 /* KafkaNativeHeader.m in Sources */,
 				983A0917201AB89900AEF743 /* KafkaHeadRefreshControl.m in Sources */,
+				F6B77095286AE4A10096B627 /* KafkaProgressiveRingIndicatorFooter.m in Sources */,
 				983A0916201AB89900AEF743 /* KafkaFootRefreshControl.m in Sources */,
 				B946B97320E67F4C00481872 /* KafkaCategories.m in Sources */,
 				983A0915201AB89900AEF743 /* UIScrollView+KafkaConfiguration.m in Sources */,
 				983A0924201AB89900AEF743 /* KafkaArcLayer.m in Sources */,
+				F6B77092286AE4870096B627 /* KafkaProgressiveRingIndicatorHeader.m in Sources */,
 				983A091C201AB89900AEF743 /* KafkaArrowFooter.m in Sources */,
 				983A091A201AB89900AEF743 /* KafkaRefreshDefaults.m in Sources */,
 				983A0918201AB89900AEF743 /* KafkaRefreshControl.m in Sources */,
@@ -680,7 +692,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BUL3PX47WF;
+				DEVELOPMENT_TEAM = 97QJCYC5T5;
 				INFOPLIST_FILE = KafkaExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -696,7 +708,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BUL3PX47WF;
+				DEVELOPMENT_TEAM = 97QJCYC5T5;
 				INFOPLIST_FILE = KafkaExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

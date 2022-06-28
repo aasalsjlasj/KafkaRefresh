@@ -19,6 +19,8 @@
 #import "KafkaReplicatorFooter.h"
 #import "KafkaRingIndicatorFooter.h"
 #import "KafkaArrowFooter.h"
+#import "KafkaProgressiveRingIndicatorHeader.h"
+#import "KafkaProgressiveRingIndicatorFooter.h"
 
 @implementation UIScrollView (KafkaConfiguration)
 
@@ -35,6 +37,12 @@
             head = h;
             break;
         }
+            
+        case KafkaRefreshStyleAnimatableProgressiveRing:{
+            head = [[KafkaProgressiveRingIndicatorHeader alloc] init];
+            break;
+        }
+            
         case KafkaRefreshStyleReplicatorWoody:
         case KafkaRefreshStyleReplicatorAllen:
         case KafkaRefreshStyleReplicatorCircle:
@@ -72,6 +80,12 @@
             foot = [[KafkaNativeFooter alloc] init];
             break;
         }
+            
+        case KafkaRefreshStyleAnimatableProgressiveRing:{
+            foot = [[KafkaProgressiveRingIndicatorFooter alloc] init];
+            break;
+        }
+            
         case KafkaRefreshStyleReplicatorWoody:
         case KafkaRefreshStyleReplicatorAllen:
         case KafkaRefreshStyleReplicatorCircle:
@@ -154,6 +168,16 @@
             }
             break;
         }
+            
+        case  KafkaRefreshStyleAnimatableProgressiveRing:{
+            if (position == KafkaRefreshPositionHeader) {
+                cls = [[KafkaProgressiveRingIndicatorFooter alloc] init];
+            }else{
+                cls = [[KafkaProgressiveRingIndicatorHeader alloc] init];
+            }
+            break;
+        }
+            
         case KafkaRefreshStyleReplicatorWoody:
         case KafkaRefreshStyleReplicatorAllen:
         case KafkaRefreshStyleReplicatorCircle:
